@@ -12,6 +12,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
     /* align-items: center;
     gap: 1300px; */
 }
@@ -23,8 +24,8 @@ body {
 }
 
 header {
-    background: #F0F4EF;
-    color: #363434;
+    background: #0078d4;
+    color: #ffffff;
     text-align: center;
     
 }
@@ -39,6 +40,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -54,7 +56,7 @@ nav a:hover
 }
 
 #hero {
-    background: #f4f4f4;
+    background: #0078d4;
     text-align: center;
     padding: 0;
 }
@@ -66,7 +68,7 @@ nav a:hover
 .btn {
     display: inline-block;
     padding: 0.7rem 1.5rem;
-    background: #0078d4;
+    background: #00d435;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -74,7 +76,7 @@ nav a:hover
 }
 
 .btn:hover {
-    background: #0056a3;
+    background: #076804;
 }
 
 section {
@@ -85,7 +87,7 @@ section {
     display: grid;
     gap: 1.5rem;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .service {
@@ -142,16 +144,17 @@ footer {
     position: relative;
     height: 100vh; /* Full height of the viewport */
     overflow: hidden;
-    background-color: #F0F4EF
+    background-color: #0078d4;
 }
 
 .Firstpage .content {
     position: absolute;
     left: 0;
-    width: 50%; /* Allocate half of the width for text */
-    padding: 2rem;
+    width: 100%;
+    padding: 1rem;
     box-sizing: border-box;
-    margin-top: 220px;
+    margin-top: 100px;
+    /* z-index: 10; */
 }
 
 .Firstpage h2 {
@@ -162,20 +165,6 @@ footer {
 .Firstpage p {
     margin: 1rem 0;
     font-size: 1.2rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    background: #0078d4;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-}
-
-.btn:hover {
-    background: #0056a3;
 }
 
 .Firstpage .image {
@@ -198,6 +187,8 @@ footer {
     border-radius: 600px 0px 0px 600px;
     background-size: cover;
     background-repeat:  no-repeat;
+    display: none;
+    /* z-index: 5; */
 }
 
 
@@ -212,6 +203,7 @@ footer {
     position: relative;
     width: 100%;
     height: 100%;
+    /* z-index: 1; */
 }
 
 .bubble {
@@ -232,4 +224,71 @@ footer {
         transform: translateY(-120vh);
         opacity: 0;
     }
+}
+
+@media (min-width: 600px) {
+    .service-box {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .service-box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .Firstpage .content {
+        width: 50%;
+    }
+
+    .Firstpage .img {
+        display: block;
+    }
+}
+
+.specialities {
+    background: #0078d4;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    text-align: left;
+    /* position: relative; */
+    /* z-index: 10; */
+}
+
+.specialities h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.specialities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.specialities li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.specialities li::before {
+    content: '✔';
+    color: #fff;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+.social{
+    list-style: none;
+    font-size: 17px;
+}
+.whatsapp {
+    color: #25D366 !important;
+}
+.instagram {
+    color: pink !important;
 }

@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Shop Name</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,15 +20,23 @@
             </nav>
         </div>
     </header>
-
+   
     <section id="hero">
        
         <div class="Firstpage ">
             <div class="content">
                 <h2>Your Trusted Dry Cleaning Partner</h2>
-                <p>Professional and affordable dry cleaning services near you.</p>
+                <div class="specialities">
+                    <ul>
+                        <li><strong>Fresh and Reliable Dry Cleaning Services</strong></li>
+                        <li><strong>We Guarantee 100% Clean Clothes</strong></li>
+                        <li><strong>Quick. Quality. Affordable.</strong></li>
+                        <li><strong>Dry Cleaning at its Best!</strong></li>
+                    </ul>
+                </div>
                 <a href="#contact" class="btn">Get in Touch</a>
             </div>
+            
             <!-- <div class="image">
                 <img src="./Assets/washing-machine.png" alt="Washing Machine">
             </div> -->
@@ -35,15 +44,15 @@
             </div>
         </div>
         <div class="bubble-container">
-            
         </div>
     </section>
 
     <section id="services">
         <div class="container">
             <h2>Our Services</h2>
-            <div class="service-box">
-                <div class="service">
+            <div class="service-box" id="services-container">
+                <!-- Dynamci code generation -->
+                <!-- <div class="service">
                     <div class="Service-img">
                         
                     </div>
@@ -51,19 +60,7 @@
                         <h3>Dry Cleaning</h3>
                         <p>Keep your clothes spotless and fresh.</p>
                     </div>
-                </div>
-                <div class="service">
-                    <h3>Alterations</h3>
-                    <p>Perfect fit for your garments.</p>
-                </div>
-                <div class="service">
-                    <h3>Laundry</h3>
-                    <p>Clean and fold laundry services.</p>
-                </div>
-                <div class="service">
-                    <h3>Laundry</h3>
-                    <p>Clean and fold laundry services.</p>
-                </div>
+                </div> -->
             </div>
             
         </div>
@@ -73,26 +70,31 @@
         <div class="container">
             <h2>About Us</h2>
             <p>At Fresh & Clean, we pride ourselves on providing top-notch dry cleaning services with exceptional customer care. With years of experience, we ensure your garments look their best every time.</p>
+            <p>Our team of skilled professionals uses the latest technology and eco-friendly products to deliver outstanding results. We understand the importance of your clothing and handle each item with the utmost care.</p>
+            <p>We offer a wide range of services including dry cleaning, laundry, alterations, and more. Our commitment to quality and customer satisfaction has earned us a loyal customer base.</p>
+            <p>Visit us today and experience the Fresh & Clean difference. We look forward to serving you!</p>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+            
+                <h2>Contact Us</h2>
+                <div class="address">
+                    <p><span>Salman, No. 53/21, Devaraj Street, Royapettah, Chennai - 14</span></p>
+                    <p></span></p>
+                    <p class="social whatsapp"><i class="fab fa-whatsapp"></i> <span style="color: black;">8940323024</span></p>
+                    <p class="social instagram"><i class="fab fa-instagram"></i><span style="color: black;"> @nan_thanda_leo</span></p>
+                    <p class="social email"><i class="fas fa-envelope"></i> <span style="color: black;">example@gmail.com</span></p>
+                </div>
         </div>
     </section>
-
+<!-- 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Fresh & Clean Dry Cleaners. All rights reserved.</p>
-        </div>
-    </footer>
+       
+    </footer> -->
+    
+    <script src="./js/script.js"></script>
     <script src="./js/bubble.js"></script>
 
 </body>
